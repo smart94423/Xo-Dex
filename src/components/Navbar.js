@@ -51,7 +51,7 @@ export default function Example() {
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden" style={{width: "120px"}}>
                 <img src={logo} style={{minWidth: "60px", maxWidth: "60px"}}></img>
-                <img src={logoB} className='pt-4' style={{marginLeft:"-6px", width: "120px"}}></img>
+                {/* <img src={logoB} className='pt-4' style={{marginLeft:"-6px", width: "120px"}}></img> */}
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
