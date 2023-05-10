@@ -172,6 +172,10 @@
     .profit_calc{
         width: 100% !important;
     }
+
+    .wallet_connect{
+        width: 100px;
+    }
 }
 
 /* sm */

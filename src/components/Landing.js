@@ -170,6 +170,7 @@ function Landing () {
             <div className='font-bold text-2xl text-white pb-10'>TOKENOMICS</div>
 
             <div className='flex flex-row _md:flex-col'>
+              <div className='w-full _md:pl-10'>
               <div className='flex flex-col' style={{width: "5%"}}>
                 <div className='text-gray-600 text-lg font-bold'>Team</div>
                 <div className='text-white text-lg font-bold'>5%</div>
@@ -204,6 +205,7 @@ function Landing () {
                 <div className='text-gray-600 text-lg font-bold'>Fair Launch</div>
                 <div className='text-white text-lg font-bold'>30%</div>
                 <div className='h-14 w-full' style={{backgroundColor: "rgba(109, 74, 254, 0.7)"}}></div>
+              </div>
               </div>
             </div>
 
