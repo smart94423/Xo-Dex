@@ -129,6 +129,10 @@
         padding-left: 40px;
         padding-right: 40px;
     }
+
+    .tokenomics {
+        width: 100% !important;
+    }
 }
 
 /* md */

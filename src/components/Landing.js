@@ -169,8 +169,8 @@ function Landing () {
           <div>
             <div className='font-bold text-2xl text-white pb-10'>TOKENOMICS</div>
 
-            <div className='flex flex-row _md:flex-col'>
-              <div className='w-full _md:pl-10'>
+            <div className='tokenomics' style={{width: "1000px"}}>
+              <div className='flex flex-row _lg:flex-col w-full _lg:pl-10'>
               <div className='flex flex-col' style={{width: "5%"}}>
                 <div className='text-gray-600 text-lg font-bold'>Team</div>
                 <div className='text-white text-lg font-bold'>5%</div>
