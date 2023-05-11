@@ -3,9 +3,9 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useNavigate } from 'react-router-dom';
 import logo from '../img/logo.png';
-import logoB from '../img/logoB.png';
 
-//wallet connect modules
+
+//-----------wallet connect modules--------------
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
 import { Web3Modal } from '@web3modal/react'
 import { configureChains, createClient, WagmiConfig } from 'wagmi'
@@ -23,6 +23,8 @@ const wagmiClient = createClient({
   provider
 })
 const ethereumClient = new EthereumClient(wagmiClient, chains)
+//----------------------------------------------------
+
 
 const navigation = [
   { name: 'Developers', href: '#', current: true },
@@ -50,12 +52,18 @@ export default function Example() {
           <div className="max-w-7x px-4 sm:px-8 lg:px-12">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden" style={{width: "120px"}}>
-                <img src={logo} style={{minWidth: "60px", maxWidth: "60px"}}></img>
-                {/* <img src={logoB} className='pt-4' style={{marginLeft:"-6px", width: "120px"}}></img> */}
+                <img src={logo} style={{minWidth: "120px", maxWidth: "120px"}}></img>
               </div>
+              {/*Connect button for responsive */}
+              <div className="absolute inset-y-0 right-16 flex items-right items-center  sm:hidden"> 
+                  <WagmiConfig client={wagmiClient}>
+                    <Web3Button className="wallet_connect" accentColor="blueviolet" style={{width: "120px"}}/>
+                  </WagmiConfig>
+                  <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
+              </div>
+              {/* Mobile menu button*/}
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-                {/* Mobile menu button*/}
-                <Disclosure.Button style={{marginRight: "10px"}} className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button style={{marginRight: "1px"}} className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   
                   {open ? (
@@ -64,13 +72,6 @@ export default function Example() {
                     <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </Disclosure.Button>
-                {/* <div className="rounded-md py-1 px-3 text-white" style={{background: 'linear-gradient(245.22deg,#da2eef 35%,#2b6aff 65.17%,#39d0d8 92.1%)'}}>Connect Wallet</div> */}
-                <>
-                  <WagmiConfig client={wagmiClient}>
-                    <Web3Button className="wallet_connect" accentColor="blueviolet" style={{width: "100px"}}/>
-                  </WagmiConfig>
-                  <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
-                </>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start hover:cursor-pointer" onClick={gotoLanding}>
                 {/* Normal navigation*/}
@@ -82,21 +83,8 @@ export default function Example() {
                     // style={{width: "150px", height: "60px"}}
                   />
                   <img
-                    className="block h-16 w-auto lg:hidden"
-                    src={logoB}
-                    alt="Your Company"
-                    // style={{width: "150px", height: "60px"}}
-                  />
-                  <img
                     className="hidden h-16 w-auto lg:block"
                     src={logo}
-                    alt="Your Company"
-                    // style={{width: "150px", height: "60px"}}
-                  />
-                  <img
-                    className="hidden h-16 w-auto lg:block mt-4"
-                    src={logoB}
-                    style={{marginLeft: "-6px"}}
                     alt="Your Company"
                     // style={{width: "150px", height: "60px"}}
                   />
@@ -118,13 +106,12 @@ export default function Example() {
                         {item.name}
                       </a>
                     ))}
-                    <>
+                    <> {/* connect button */}
                       <WagmiConfig client={wagmiClient}>
                         <Web3Button accentColor="blueviolet"/>
                       </WagmiConfig>
                       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
                     </>
-                    {/* <div className="rounded-md py-1 px-3 text-white bg-gradient-to-r from-sky-400 via-blue-600 to-pink-500 hover:from-blue-600 hover:to-pink-500">Connect Wallet</div> */}
                   </div>
                 </div>
               </div>

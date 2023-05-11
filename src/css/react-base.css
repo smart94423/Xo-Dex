@@ -188,6 +188,10 @@
         display: none;
     }
 
+    .first_section{
+        height: 640px !important;
+    }
+
     .smShow {
         text-align: center;
     }
