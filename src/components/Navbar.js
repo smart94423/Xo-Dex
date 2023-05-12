@@ -9,11 +9,11 @@ import logo from '../img/logo.png';
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
 import { Web3Modal } from '@web3modal/react'
 import { configureChains, createClient, WagmiConfig } from 'wagmi'
-import { arbitrum, mainnet, polygon } from 'wagmi/chains'
+import { arbitrum, mainnet, polygon, bsc } from 'wagmi/chains'
 
 import { Web3Button } from '@web3modal/react'
 
-const chains = [arbitrum, mainnet, polygon]
+const chains = [arbitrum, mainnet, polygon, bsc]
 const projectId = 'fe62b424c4ab666f47d64744e0b3dca0'
 
 const { provider } = configureChains(chains, [w3mProvider({ projectId })])
@@ -55,12 +55,14 @@ export default function Example() {
                 <img src={logo} style={{minWidth: "120px", maxWidth: "120px"}}></img>
               </div>
               {/*Connect button for responsive */}
-              <div className="absolute inset-y-0 right-16 flex items-right items-center  sm:hidden"> 
+              
+              {/* <div className="absolute inset-y-0 right-16 flex items-right items-center  sm:hidden"> 
                   <WagmiConfig client={wagmiClient}>
-                    <Web3Button className="wallet_connect" accentColor="blueviolet" style={{width: "120px"}}/>
+                    <Web3Button className="wallet_connect" label="Connect" accentColor="blueviolet" style={{ width: "120px"}}/>
                   </WagmiConfig>
                   <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
-              </div>
+              </div> */}
+              
               {/* Mobile menu button*/}
               <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
                 <Disclosure.Button style={{marginRight: "1px"}} className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -110,7 +112,6 @@ export default function Example() {
                       <WagmiConfig client={wagmiClient}>
                         <Web3Button accentColor="blueviolet"/>
                       </WagmiConfig>
-                      <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
                     </>
                   </div>
                 </div>
@@ -127,9 +128,9 @@ export default function Example() {
               </div> */}
             </div>
           </div>
-
+          <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
           <Disclosure.Panel className="sm:hidden w-full">
-            <div className="space-y-1 px-2 pb-3 pt-2">
+            <div className="space-y-1 px-2 pb-3 pt-2 overflow">
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
@@ -146,6 +147,7 @@ export default function Example() {
                   {item.name}
                 </Disclosure.Button>
               ))}
+              <Web3Button className="wallet_connect" label="Connect" accentColor="blueviolet" style={{ width: "120px"}}/>
             </div>
           </Disclosure.Panel>
           
