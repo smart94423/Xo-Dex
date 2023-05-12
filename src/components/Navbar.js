@@ -27,9 +27,9 @@ const ethereumClient = new EthereumClient(wagmiClient, chains)
 
 
 const navigation = [
-  { name: 'Developers', href: '#', current: true },
-  { name: 'Tokenomics', href: '#', current: false },
-  { name: 'Roadmap', href: '#', current: false },
+  { name: 'Developers', href: '#Developer', current: false },
+  { name: 'Tokenomics', href: '#Tokenomics', current: false },
+  { name: 'Roadmap', href: '#Roadmap', current: false },
   { name: 'Whitepaper ', href: '#', current: false },
   {name: 'Staking', href: '#', current: false },
 ]
@@ -46,25 +46,25 @@ export default function Example() {
   }
 
   return (
-    <Disclosure as="nav" className="bg-gray-800 pt-7" style={{backgroundColor: "#1F2633"}}>
+    <Disclosure as="nav" className="bg-gray-800 pt-2 fixed inset-x-0 z-10" style={{backgroundColor: "#00000077"}}>
       {({ open }) => (
         <>
           <div className="max-w-7x px-4 sm:px-8 lg:px-12">
             <div className="relative flex h-16 items-center justify-between">
-              <div className="absolute inset-y-0 left-0 flex items-center sm:hidden" style={{width: "120px"}}>
+              <div className="absolute inset-y-0 left-0 flex items-center lg:hidden" style={{width: "120px"}}>
                 <img src={logo} style={{minWidth: "120px", maxWidth: "120px"}}></img>
               </div>
               {/*Connect button for responsive */}
               
-              {/* <div className="absolute inset-y-0 right-16 flex items-right items-center  sm:hidden"> 
+              {/* <div className="absolute inset-y-0 right-16 flex items-right items-center  lg:hidden"> 
                   <WagmiConfig client={wagmiClient}>
-                    <Web3Button className="wallet_connect" label="Connect" accentColor="blueviolet" style={{ width: "120px"}}/>
+                    <Web3Button className="wallet_connect" label="Connect" accentColor="blueviolet" style={{ width: "120px"}}/> 
                   </WagmiConfig>
                   <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
               </div> */}
               
               {/* Mobile menu button*/}
-              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
                 <Disclosure.Button style={{marginRight: "1px"}} className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   
@@ -77,7 +77,7 @@ export default function Example() {
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start hover:cursor-pointer" onClick={gotoLanding}>
                 {/* Normal navigation*/}
-                <div className="flex flex-shrink-0 items-center _sm:hidden">
+                <div className="flex flex-shrink-0 items-center _lg:hidden">
                   <img
                     className="block h-16 w-auto lg:hidden"
                     src={logo}
@@ -91,7 +91,7 @@ export default function Example() {
                     // style={{width: "150px", height: "60px"}}
                   />
                 </div>
-                <div className="hidden sm:ml-6 sm:block w-full pt-2">
+                <div className="hidden sm:ml-6 lg:block w-full pt-2">
                   <div className="flex flex-row justify-center items-center space-x-4 text-center" style={{justifyContent: "end"}}>
                     {navigation.map((item) => (
                       <a
@@ -116,7 +116,7 @@ export default function Example() {
                   </div>
                 </div>
               </div>
-              {/* <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 _md:hidden">
+              {/* <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 _lg:hidden">
                 <a className='text-gray-500 text-xl pr-5'>|</a>
                 <a href="#" className='text-white text-sm pr-5'>Login</a>
                 <a href="#" className='text-center text-white px-0 py-2 rounded-md mx-1 text-sm' style={{backgroundColor: "#662483", width: "130px"}}>Create an account</a>                                
@@ -129,7 +129,7 @@ export default function Example() {
             </div>
           </div>
           <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
-          <Disclosure.Panel className="sm:hidden w-full">
+          <Disclosure.Panel className="lg:hidden w-full">
             <div className="space-y-1 px-2 pb-3 pt-2 overflow">
               {navigation.map((item) => (
                 <Disclosure.Button

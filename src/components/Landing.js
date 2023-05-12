@@ -3,9 +3,11 @@
 import * as React from 'react'
 import '../css/react-base.css'
 import '../css/animations.css';
+import '../css/second_section.css';
+import '../css/roadmap.css';
+import '../css/real_roadmap.css';
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import Pagination from './Pagination';
 
 function Landing () {
 
@@ -20,8 +22,8 @@ function Landing () {
               <img className='absolute top-0' src="https://raydium.io/backgroundImages/home-bg-element-1.png"></img>
               {/* FirstSection Content */}
               <div className='first_section relative px-4 sm:px-6 flex flex-col justify-center items-center w-full' style={{height: "1000px"}}>
-                <div class="absolute inset-0">
-                  <video autoPlay loop muted class="absolute h-full w-full object-cover">
+                <div className="absolute inset-0">
+                  <video autoPlay loop muted className="absolute h-full w-full object-cover">
                     <source src="img/hero.webm" type="video/webm"></source>
                   </video>
                 </div>
@@ -52,122 +54,155 @@ function Landing () {
               </div>
               
               {/* SecondSection Content */}
-              <div className='relative flex flex-col justify-center items-center w-full secondsection-circle h-full' style={{paddingTop: "150px"}}>
-                {/* <div className="absolute inset-0 opacity-30 myDiv"></div> */}
-  
-                {/* <img src="https://raydium.io/backgroundImages/home-bg-element-2.png" className='absolute top-20'></img> */}
-                {/* Title */}
-                <div className='pb-5 rounded-xl border-2 border-gray-700'>
-                <div className='relative mb-8'>
-                  <div className='text-2xl text-white font-bold'>How to Participate</div>
-                </div>
-                {/* Cards */}
-                <div className="relative flex justify-center items-center px-5">
-                <div className='grid gap-5 grid-cols-3 _lg:grid-cols-1'>
-                  <div className='Card flex-1 children-center frosted-glass-lightsmoke forsted-blur-sm py-6 px-12 rounded-3xl' style={{width:"300px"}}>
-                    <div className='frosted-glass-teal p-3 mb-3 rounded-xl flex justify-center'>
-                      <div className='Icon grid h-max w-max'>
-                        <img src="https://raydium.io/icons/home-trade.svg" className='select-none h-6 w-6'></img>
+              <div className='relative flex flex-col justify-center items-center w-full h-full'>
+                <img src="https://raydium.io/backgroundImages/home-bg-element-3.png" className='absolute top-0' style={{top: "0%", width: "100%"}}></img>
+                <p className='text-white text-4xl font-bold pt-36'>How to participate</p>
+                <div className="second_section">
+                  <div className="card">
+                    <div className="box">
+                      <div className="content">
+                        <h2>01</h2>
+                        <h3>Submit KYC</h3>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                        <a href="#">Read More</a>
                       </div>
                     </div>
-                    <div className='font-semibold text-lg text-white mb-2'>1.&nbsp;Submit KYC</div>
-                    <div className='font-light text-sm text-[#c4d6ff] mb-5'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</div>
                   </div>
-                  <div className='Card flex-1 children-center frosted-glass-lightsmoke forsted-blur-sm py-6 px-12 rounded-3xl' style={{width:"300px"}}>
-                    <div className='frosted-glass-teal p-3 mb-3 rounded-xl flex justify-center'>
-                      <div className='Icon grid h-max w-max'>
-                        <img src="https://raydium.io/icons/home-trade.svg" className='select-none h-6 w-6'></img>
+                
+                  <div className="card">
+                    <div className="box">
+                      <div className="content">
+                        <h2>02</h2>
+                        <h3>Verify Wallet</h3>
+                        <p>Popular belief Ipsum is not simply random text. It has roots in a piece of classical</p>
+                        <a href="#">Read More</a>
                       </div>
                     </div>
-                    <div className='font-semibold text-lg text-white mb-2'>2.&nbsp;Verify Wallet</div>
-                    <div className='font-light text-sm text-[#c4d6ff] mb-5'>Popular belief Ipsum is not simply random text. It has roots in a piece of classical</div>
                   </div>
-                  <div className='Card flex-1 children-center frosted-glass-lightsmoke forsted-blur-sm py-6 px-12 rounded-3xl' style={{width:"300px"}}>
-                    <div className='frosted-glass-teal p-3 mb-3 rounded-xl flex justify-center'>
-                      <div className='Icon grid h-max w-max'>
-                        <img src="https://raydium.io/icons/home-trade.svg" className='select-none h-6 w-6'></img>
+                
+                  <div className="card">
+                    <div className="box">
+                      <div className="content">
+                        <h2>03</h2>
+                        <h3>Start Staking</h3>
+                        <p>Belief norem Isum is not simply random text. It has roots in a piece of classical?</p>
+                        <a href="#">Read More</a>
                       </div>
                     </div>
-                    <div className='font-semibold text-lg text-white mb-2'>3.&nbsp;Start Staking</div>
-                    <div className='font-light text-sm text-[#c4d6ff] mb-5'>Belief norem Isum is not simply random text. It has roots in a piece of classical</div>
                   </div>
-                </div>
-                </div>
                 </div>
               </div>
 
-              {/* Third Section */}
+              {/* Roadmap */}
+              {/* Title */}
+              <div id="Developer" className='relative mb-8 pt-32'>
+                <div className='text-4xl text-white font-bold'>Developer</div>
+              </div>
               <div className='relative flex flex-col justify-center items-center w-full h-full'>
-                <img src="https://raydium.io/backgroundImages/home-bg-element-3.png" className='absolute top-20' style={{width: "100%"}}></img>
-                {/* Title */}
-                <div className='relative mb-8 pt-56'>
-                  <div className='text-2xl text-white font-bold'>Developers</div>
-                </div>
-                {/* Cards */}
-                <div className="relative flex justify-center items-center">
-                <div className='grid gap-5 grid-cols-4 _md:grid-cols-1 _sm:grid-cols-1 _lg:grid-cols-1'>
-                  <div className='Card flex-1 children-center frosted-glass-lightsmoke forsted-blur-sm py-6 px-12 rounded-3xl _md:w-full _sm:w-full'>
-                    <div className='frosted-glass-teal p-3 mb-3 rounded-xl flex justify-center'>
-                      <div className='Icon grid h-max w-max'>
-                        <img src="img/1.jpg" className='select-none' style={{maxWidth:"200px"}}></img>
+                {/* <img src="https://raydium.io/backgroundImages/home-bg-element-3.png" className='absolute top-0' style={{top: "-60%", width: "100%"}}></img> */}
+
+                <div className="box-container m-auto">
+                  <div className="box-item">
+                  <div className="flip-box">
+                    <div className="flip-box-front text-center relative">
+                      <img src="img/1.jpg" className='absolute top-0 left-0 h-full'></img>
+                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+                        <div className='text-white text-2xl text-left pl-4'>Mr.Versace</div>
+                        <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
+                          <div className='text-white text-base text-left pl-4'>Project Lead</div>
+                          <div className='flex flex-row justify-end'>
+                            <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
+                            <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div className='font-semibold text-lg text-white mb-2'>Versace</div>
-                    <div className='font-light text-sm text-[#c4d6ff] mb-5'>Project Lead</div>
-                    <div className='flex flex-row py-1 justify-center'>
-                      <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
-                      <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
-                    </div>
-                  </div>
-                  <div className='Card flex-1 children-center frosted-glass-lightsmoke forsted-blur-sm py-6 px-12 rounded-3xl _md:w-full _sm:w-full'>
-                    <div className='frosted-glass-teal p-3 mb-3 rounded-xl flex justify-center'>
-                      <div className='Icon grid h-max w-max'>
-                        <img src="img/2.jpg" className='select-none' style={{maxWidth:"200px"}}></img>
+                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/frbd9towf/cta-2.png')"}}>
+                      <div className="inner color-white">
+                        <button className="flip-box-button">Learn More</button>
                       </div>
                     </div>
-                    <div className='font-semibold text-lg text-white mb-2'>Rakesh Barking</div>
-                    <div className='font-light text-sm text-[#c4d6ff] mb-5'>Manager of Marketing</div>
-                    <div className='flex flex-row py-1 justify-center'>
-                      <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
-                      <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
-                    </div>
                   </div>
-                  <div className='Card flex-1 children-center frosted-glass-lightsmoke forsted-blur-sm py-6 px-12 rounded-3xl _md:w-full _sm:w-full'>
-                    <div className='frosted-glass-teal p-3 mb-3 rounded-xl flex justify-center'>
-                      <div className='Icon grid h-max w-max'>
-                        <img src="img/3.jpg" className='select-none' style={{maxWidth:"200px"}}></img>
+                  </div>
+
+                  <div className="box-item">
+                  <div className="flip-box">
+                    <div className="flip-box-front text-center relative">
+                      <img src="img/2.jpg" className='absolute top-0 left-0 h-full'></img>
+                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+                        <div className='text-white text-2xl text-left pl-4'>Mr.Rakesh</div>
+                        <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
+                          <div className='text-white text-base text-left pl-4'>Admin</div>
+                          <div className='flex flex-row justify-end'>
+                            <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
+                            <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div className='font-semibold text-lg text-white mb-2'>Arresster</div>
-                    <div className='font-light text-sm text-[#c4d6ff] mb-5'>Fullstack Developer</div>
-                    <div className='flex flex-row py-1 justify-center'>
-                      <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
-                      <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
-                    </div>
-                  </div>
-                  <div className='Card flex-1 children-center frosted-glass-lightsmoke forsted-blur-sm py-6 px-12 rounded-3xl _md:w-full _sm:w-full'>
-                    <div className='frosted-glass-teal p-3 mb-3 rounded-xl flex justify-center'>
-                      <div className='Icon grid h-max w-max'>
-                        <img src="img/3.jpg" className='select-none' style={{maxWidth:"200px"}}></img>
+                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png')"}}>
+                      <div className="inner color-white">
+                        <button className="flip-box-button">Learn More</button>
                       </div>
                     </div>
-                    <div className='font-semibold text-lg text-white mb-2'>Arresster</div>
-                    <div className='font-light text-sm text-[#c4d6ff] mb-5'>Fullstack Developer</div>
-                    <div className='flex flex-row py-1 justify-center'>
-                      <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
-                      <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
+                  </div>
+                  </div>
+
+                  <div className="box-item">
+                  <div className="flip-box">
+                    <div className="flip-box-front text-center relative">
+                      <img src="img/3.jpg" className='absolute top-0 left-0 h-full w-full'></img>
+                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+                        <div className='text-white text-2xl text-left pl-4'>Jyax</div>
+                        <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
+                          <div className='text-white text-base text-left pl-4'>Moderator</div>
+                          <div className='flex flex-row justify-end'>
+                            <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
+                            <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/hj4c4qnov/cta-3.png')"}}>
+                      <div className="inner color-white">
+                        <button className="flip-box-button">Learn More</button>
+                      </div>
                     </div>
                   </div>
-                </div>
-                </div>
+                  </div>
+                  
+                  <div className="box-item">
+                  <div className="flip-box">
+                    <div className="flip-box-front text-center relative">
+                      <img src="img/4.jpg" className='absolute top-0 left-0 h-full'></img>
+                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+                        <div className='text-white text-2xl text-left pl-4'>Mr.Versace</div>
+                        <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
+                          <div className='text-white text-base text-left pl-4'>Project Lead</div>
+                          <div className='flex flex-row justify-end'>
+                            <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
+                            <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png')"}}>
+                      <div className="inner color-white">
+                        <button className="flip-box-button">Learn More</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+              </div>
               </div>
           </div>
         </div>
 
         {/* Tokenomics */}
-        <div className='flex flex-col justify-center items-center py-32'>
+        <div id="Tokenomics" className='flex flex-col justify-center items-center pt-20 pb-32'>
           <div>
-            <div className='font-bold text-2xl text-white pb-10'>TOKENOMICS</div>
+            <div className='relative font-bold text-3xl text-white pb-10'>TOKENOMICS</div>
 
             <div className='tokenomics' style={{width: "1000px"}}>
               <div className='flex flex-row _lg:flex-col w-full _lg:pl-10'>
@@ -230,7 +265,104 @@ function Landing () {
           </div>
         </div>
 
+        {/* Roadmap */}
+        {/* Title */}
+        <div id="Roadmap" className='relative mb-8 pt-10'>
+          <div className='text-4xl text-white font-bold'>Roadmap</div>
+        </div>
+        {/* Cards */}
+        {/* <div className="relative flex justify-center items-center pb-10">
+        <div className='grid gap-20 grid-cols-3 _md:grid-cols-1 _sm:grid-cols-1 _lg:grid-cols-1'>
+          <div className='Card flex-1 children-center frosted-glass-lightsmoke forsted-blur-sm py-6 px-12 rounded-3xl _md:w-full _sm:w-full'>
+            <div className='frosted-glass-teal p-3 mb-3 rounded-xl flex justify-center'>
+              <div className='Icon grid h-max w-max'>
+                <img src="img/1.jpg" className='select-none' style={{maxWidth:"200px"}}></img>
+              </div>
+            </div>
+            <div className='font-semibold text-2xl text-white mb-2'>Phase 1</div>
+            <div className='font-light text-lg text-[#c4d6ff] mb-5 text-left'>
+            1. Grow 10K Community <br></br>
+            2. Launch TBB Site V1<br></br>
+            3. Presale TBB Token<br></br>
+            4. Listing On PancakeSwap, CMC or CGK<br></br>
+            5. Launch Staking TBB token<br></br>
+            6. Marketing Campaign and Partnership<br></br>
+            </div>
 
+          </div>
+          <div className='Card flex-1 children-center frosted-glass-lightsmoke forsted-blur-sm py-6 px-12 rounded-3xl _md:w-full _sm:w-full'>
+            <div className='frosted-glass-teal p-3 mb-3 rounded-xl flex justify-center'>
+              <div className='Icon grid h-max w-max'>
+                <img src="img/2.jpg" className='select-none' style={{maxWidth:"200px"}}></img>
+              </div>
+            </div>
+            <div className='font-semibold text-2xl text-white mb-2'>Phase 2</div>
+            <div className='font-light text-lg text-left text-[#c4d6ff] mb-5'>
+            1. Launch TBB NFT<br></br>
+            2. Presale / Minting NFT<br></br>
+            3. Launch TBB NFT MarketPlace<br></br>
+            4. Launch TBB Site V2<br></br>
+            5. Launch Staking TBB NFT<br></br>
+            6. Multichain Launch<br></br>
+            </div>
+          </div>
+          <div className='Card flex-1 children-center frosted-glass-lightsmoke forsted-blur-sm py-6 px-12 rounded-3xl _md:w-full _sm:w-full'>
+            <div className='frosted-glass-teal p-3 mb-3 rounded-xl flex justify-center'>
+              <div className='Icon grid h-max w-max'>
+                <img src="img/4.jpg" className='select-none' style={{maxWidth:"200px"}}></img>
+              </div>
+            </div>
+            <div className='font-semibold text-2xl text-white mb-2'>Phase 3</div>
+            <div className='font-light text-lg text-[#c4d6ff] mb-5 text-left'>
+            1. Growing more usecase for TBB token<br></br> ( Will be taken from community voting )<br></br>
+            3. Audited by Certik<br></br>
+            2. CEX Listing<br></br>
+            </div>
+          </div>
+        </div>
+        </div> */}
+        <div className='flex flex-row _lg:flex-col justify-center'>
+        <div class="roadmap_card">
+          <div class="card-image" ></div>
+          <div class="card-text">
+            <h2>Phase 1</h2>
+            <p>
+              1. Grow 10K Community<br></br>
+              2. Launch TBB Site V1<br></br>
+              3. Presale TBB Token<br></br>
+              4. Listing On PancakeSwap, CMC or CGK<br></br>
+              5. Launch Staking TBB token<br></br>
+              6. Marketing Campaign and Partnership<br></br>
+            </p>
+          </div>
+        </div>
+        <div class="roadmap_card rgb">
+          <div class="card-image card2"></div>
+          <div class="card-text card2">
+            <h2>Phase 2</h2>
+            <p>
+              1. Launch TBB NFT<br></br>
+              2. Presale / Minting NFT<br></br>
+              3. Launch TBB NFT MarketPlace<br></br>
+              4. Launch TBB Site V2<br></br>
+              5. Launch Staking TBB NFT<br></br>
+              6. Multichain Launch<br></br>
+            </p>
+          </div>
+        </div>
+        <div class="roadmap_card">
+            <div class="card-image card3"></div>
+            <div class="card-text card3">
+              <h2>Phase 3</h2>
+              <p>1. Growing more usecase for TBB token ( Will be taken from community voting )<br></br>
+                 2. CEX Listing<br></br>
+                 3. Audited by Certik<br></br>
+              </p>
+            </div>
+        </div>
+        </div>
+
+        {/* footer */}
         <div className='footer py-12 flex justify-center border border-gray-800'>
           <div className='text-left grid grid-cols-3 _lg:grid-cols-1 _md:grid-cols-1 _sm:grid-cols-1'>
             <div className='footer_email flex justify-center items-center _md:m-auto'>
