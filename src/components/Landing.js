@@ -130,7 +130,7 @@ function Landing () {
                     <div className="flip-box-front text-center relative">
                       <img src="img/2.jpg" className='absolute top-0 left-0 h-full'></img>
                       <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
-                        <div className='text-white text-2xl text-left pl-4'>Mr.Rakesh</div>
+                        <div className='text-white text-2xl text-left pl-4'>Mr.Velaso</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Admin</div>
                           <div className='flex flex-row justify-end'>
@@ -176,9 +176,9 @@ function Landing () {
                     <div className="flip-box-front text-center relative">
                       <img src="img/4.jpg" className='absolute top-0 left-0 h-full'></img>
                       <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
-                        <div className='text-white text-2xl text-left pl-4'>Mr.Versace</div>
+                        <div className='text-white text-2xl text-left pl-4'>Mr.Edestuss</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
-                          <div className='text-white text-base text-left pl-4'>Project Lead</div>
+                          <div className='text-white text-base text-left pl-4'>Designer</div>
                           <div className='flex flex-row justify-end'>
                             <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
                             <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
@@ -322,42 +322,42 @@ function Landing () {
         </div>
         </div> */}
         <div className='flex flex-row _lg:flex-col justify-center'>
-        <div class="roadmap_card">
+        <div class="roadmap_card rgb">
           <div class="card-image" ></div>
           <div class="card-text">
             <h2>Phase 1</h2>
-            <p>
+            <div className='text-gray-500 text-sm'>
               1. Grow 10K Community<br></br>
-              2. Launch TBB Site V1<br></br>
+              <p style={{color: "white"}}>2. Launch TBB Site V1</p>
               3. Presale TBB Token<br></br>
               4. Listing On PancakeSwap, CMC or CGK<br></br>
               5. Launch Staking TBB token<br></br>
               6. Marketing Campaign and Partnership<br></br>
-            </p>
+            </div>
           </div>
         </div>
-        <div class="roadmap_card rgb">
+        <div class="roadmap_card">
           <div class="card-image card2"></div>
           <div class="card-text card2">
             <h2>Phase 2</h2>
-            <p>
+            <div className='text-gray-500 text-sm'>
               1. Launch TBB NFT<br></br>
               2. Presale / Minting NFT<br></br>
               3. Launch TBB NFT MarketPlace<br></br>
               4. Launch TBB Site V2<br></br>
               5. Launch Staking TBB NFT<br></br>
               6. Multichain Launch<br></br>
-            </p>
+            </div>
           </div>
         </div>
         <div class="roadmap_card">
             <div class="card-image card3"></div>
             <div class="card-text card3">
               <h2>Phase 3</h2>
-              <p>1. Growing more usecase for TBB token ( Will be taken from community voting )<br></br>
+              <div className='text-gray-500 text-sm'>1. Growing more usecase for TBB token ( Will be taken from community voting )<br></br>
                  2. CEX Listing<br></br>
                  3. Audited by Certik<br></br>
-              </p>
+              </div>
             </div>
         </div>
         </div>
