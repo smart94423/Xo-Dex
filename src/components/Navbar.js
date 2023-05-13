@@ -31,7 +31,7 @@ const navigation = [
   { name: 'Tokenomics', href: '#Tokenomics', current: false },
   { name: 'Roadmap', href: '#Roadmap', current: false },
   { name: 'Whitepaper ', href: '#', current: false },
-  {name: 'Staking', href: '#', current: false },
+  {name: 'Staking', href: '/staking', current: false },
 ]
 
 function classNames(...classes) {

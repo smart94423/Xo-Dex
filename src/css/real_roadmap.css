@@ -1,8 +1,4 @@
 .roadmap_card {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 210px 250px 20px;
-    grid-template-areas: "image" "text" "stats";
     border-radius: 18px;
     background: #1d1d1d;
     color:white;

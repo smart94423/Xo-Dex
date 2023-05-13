@@ -19,6 +19,11 @@
     width: 1280px;
 }
 
+input[type=text] {
+    background-color: transparent;
+    border: 1px solid #4A5568;
+}
+
 .footer > div{
     width: 1240px;
 }

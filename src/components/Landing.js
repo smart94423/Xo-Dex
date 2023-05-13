@@ -8,8 +8,15 @@ import '../css/roadmap.css';
 import '../css/real_roadmap.css';
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
+import { useNavigate } from 'react-router-dom';
 
 function Landing () {
+    const navigate = useNavigate();
+
+    function goToDetailed(){
+      navigate('/detailed', { replace: true });
+    }
+
 
     return (
       <div className="App">
