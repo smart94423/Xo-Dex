@@ -374,7 +374,7 @@ function Landing () {
           <div className='text-left grid grid-cols-3 _lg:grid-cols-1 _md:grid-cols-1 _sm:grid-cols-1'>
             <div className='footer_email flex justify-center items-center _md:m-auto'>
               <div className='footerLogo flex flex-col pb-5 py-5'>
-                <img className='items-start' src="img/logo.png" style={{width: "94px", height:"94px"}}></img>
+                <img className='items-start' src="img/head_logo.png" style={{width: "200px", height:"100px"}}></img>
                 <div className='flex flex-row footer_email pt-5'>
                   <input type="text" placeholder='Enter email' className='mr-2' style={{width: "261px", backgroundColor: "#1F2633"}}></input>
                   <div className='focus:ring-4 focus:outline-none focus:ring-spring-green-800 group-hover:from-spring-green-400 group-hover:to-cerulean-600 hover:text-white relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-[#1FD992] to-[#249CD2]  text-white min-w-fit hover:cursor-pointer leading-6'>

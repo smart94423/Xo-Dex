@@ -185,6 +185,10 @@ input[type=text] {
     .wallet_connect{
         width: 100px;
     }
+
+    .roadmap_card {
+        width: 360px !important;
+    }
 }
 
 /* sm */
