@@ -9,28 +9,19 @@ import '../css/real_roadmap.css';
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 
-function Landing () {
+function Staking () {
 
     return (
       <div className="App">
-        <Navbar />
+        <Navbar name="Staking" />
 
         <div className='relative h-full pt-6' style={{backgroundColor: "#1F2633"}}>
           <div className='mt-6 flex h-full flex-col items-center relative'>
-              {/* Background */}
-              
-              <img className='absolute top-24 _md:hidden' src="https://raydium.io/backgroundImages/home-bg-element-1.png"></img>
-              {/* FirstSection Content */}
               <div className='first_section relative px-4 sm:px-6 flex flex-col justify-center items-center w-full' style={{height: "1000px"}}>
-                {/* Background */}
-                <div className="absolute inset-0">
-                  <video autoPlay loop muted className="absolute h-full w-full object-cover">
-                    <source src="img/hero.webm" type="video/webm"></source>
-                  </video>
-                </div>
+        
                 {/* Staking */}
-                <div class="roadmap_card rgb pt-4 px-4 flex flex-col" style={{width: "400px", height: "600px", backgroundColor: "rgba(0,0,0,0.9)"}}>
-                    <div className='text-white text-xl font-bold my-5' style={{height: "30px"}}>TBB</div>
+                <div className="roadmap_card rgb pt-4 px-4 flex flex-col" style={{width: "400px", height: "600px", backgroundColor: "rgba(0,0,0,0.9)"}}>
+                    <div className='text-white text-xl font-bold my-5' style={{height: "30px"}}>Pepe Born</div>
                     <div><img src="img/head_logo.png" style={{width: "150px", height:"50px"}}></img></div>
                     
                     <div id='devote' className='my-5 flex justify-center tabcontent' style={{height: "350px"}}>
@@ -66,7 +57,7 @@ function Landing () {
                         </div>
                     </div>
 
-                    <div>Total Staked TBB: 1,200,000</div>
+                    <div>Total Staked Pepe Born: 1,200,000</div>
                     <div>Deposit Fee: 0.2%</div>
                 </div>
               </div>
@@ -74,15 +65,19 @@ function Landing () {
         </div> 
 
         {/* footer */}
-        <div className='footer py-12 flex justify-center border border-gray-800'>
-          <div className='text-left grid grid-cols-3 _lg:grid-cols-1 _md:grid-cols-1 _sm:grid-cols-1'>
+        <div className='footer py-12 flex justify-center  relative' style={{height: "300px"}}>
+           <video autoPlay loop muted className="absolute h-full w-full border border-gray-600" style={{ objectFit: 'cover', height: '240px' }}>
+              <source src="https://belaunch.io/assets/bg.206574b5.mp4" type="video/mp4"></source>
+          </video> 
+
+          <div className='text-left grid grid-cols-3 _lg:grid-cols-1 _md:grid-cols-1 _sm:grid-cols-1 relative'  style={{width: "1440px"}}>
             <div className='footer_email flex justify-center items-center _md:m-auto'>
               <div className='footerLogo flex flex-col pb-5 py-5'>
-                <img className='items-start' src="img/head_logo.png" style={{width: "200px", height:"100px"}}></img>
+                <img className='items-start' src="img/head_logo.png" style={{width: "200px", height:"80px"}}></img>
                 <div className='flex flex-row footer_email pt-5'>
-                  <input type="text" placeholder='Enter email' className='mr-2' style={{width: "261px", backgroundColor: "#1F2633"}}></input>
+                  <input type="text" placeholder='Enter email' className='mr-2' style={{width: "240px", backgroundColor: "#1F2633", height: "40px"}}></input>
                   <div className='focus:ring-4 focus:outline-none focus:ring-spring-green-800 group-hover:from-spring-green-400 group-hover:to-cerulean-600 hover:text-white relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-[#1FD992] to-[#249CD2]  text-white min-w-fit hover:cursor-pointer leading-6'>
-                    <span className='group-hover:bg-opacity-0 relative px-5 py-2.5 transition-all ease-in duration-75 bg-ebony-clay-500 rounded-md flex flex-row font-bold min-w-fit items-center'>Subscribe</span>
+                    <span className='group-hover:bg-opacity-0 relative px-5 py-1 transition-all ease-in duration-75 bg-ebony-clay-500 rounded-md flex flex-row font-bold min-w-fit items-center'>Subscribe</span>
                   </div>
                 </div>
                 <a href="#" className='text-center text-gray-300 px-1 py-1 mt-4 rounded-md mx-1 border border-gray-600 text-sm' style={{backgroundColor: "#1F2633", width: "117px"}}>English (US)&nbsp;˅</a>
@@ -107,21 +102,19 @@ function Landing () {
               </div>
             </div>
 
-            <div className='flex justify-start flex-col items-center pt-5'>
+            <div className='flex justify-center flex-col items-center pt-5'>
               <p className='text-sm text-gray-300 font-bold py-2'>Follow us</p>
               <div className='flex flex-row py-1 justify-start'>
                   <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
                   <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
                   <a href="https://medium.com/@babybornlabs" target="_blank"><img src="https://app.mopots.io/static/media/medium.88b1df0cd4fba32a91140609053abfce.svg"></img></a>
               </div>
-              <div className='text-sm text-gray-400 py-3'>
-                  Copyright 2023 Lorchain All rights reserved
-              </div>
             </div>
           </div>
         </div>
+        <div className='text-sm text-gray-400 py-1'> Copyright 2023 Pepe born All rights reserved </div>
       </div>
     );
 }
 
-export default Landing;
+export default Staking;

@@ -9,6 +9,24 @@
     margin:30px;
     transform-style: preserve-3d;
     transform: perspective(1000px);
+   
+  }
+  .card {
+    display: grid;
+
+    grid-template-rows: 210px 250px 20px;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: #1d1d1d;
+    color:white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: justify;
+    cursor: pointer;
+    margin:30px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    width: 20%;
   }
   .rgb::after {
     content:"";
@@ -42,7 +60,7 @@
   }
   .card-image {
     grid-area: image;
-    background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("img/1.jpg");
+    background: linear-gradient(#fff0 0%, #fff0 70%, #1d1d1d 100%),url("./img/1.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
