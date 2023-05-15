@@ -35,13 +35,13 @@ function Landing () {
 
                 {/* Title */}
                 <h1 className='rounded-lg bg-ebony-clay-500/70 text-4xl text-left only:font-extrabold tracking-tight text-white sm:text-6xl sm:leading-none xl:text-6xl'>
-                  Multi-Chain&nbsp;
-                  <span className='bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent '>Solutions&nbsp;</span>
-                  <span className='text-primary-400 '>For&nbsp;</span>
-                  <div className='flex justify-center bg-gradient-to-r from-primary via-white to-white bg-clip-text text-transparent '>Every Crypto Asset</div>
+                  Pepe Born&nbsp;
+                  <span className='bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent '>|&nbsp;</span>
+                  <span className='text-primary-400 '>Marketplace NFT&nbsp;</span>
+                  <div className='flex justify-center bg-gradient-to-r from-primary via-white to-white bg-clip-text text-transparent '>& Swap</div>
                 </h1>
                 {/* SubTitle */}
-                <p className='text-center mt-6 rounded-lg bg-ebony-clay-500/70 text-2xl text-left text-gray-300 lg:text-3xl xl:text-3xl'>The ultimate dao-driven inter-blockchain hub for web3.0</p>
+                <p className='text-center mt-6 rounded-lg bg-ebony-clay-500/70 text-2xl text-left text-gray-300 lg:text-3xl xl:text-3xl'>The Pioneer of Sustainability meme coin on web3.0</p>
                 {/* Buttons */}
                 <div className='mt-5 w-full sm:max-w-lg lg:ml-0'>
                   <div className='mt-24 items-center gap-5 flex justify-center text-white'>
