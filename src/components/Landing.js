@@ -69,8 +69,8 @@ function Landing () {
                     <div className="box">
                       <div className="content">
                         <h2>01</h2>
-                        <h3>Submit KYC</h3>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece</p>
+                        <h3>Buy / Mint NFT</h3>
+                        <p>You can buy /minting on the market or our website, the cost for minting is only 3$, and hold it on your wallet, because we will distribute the token airdrop based on the nft snapshot holder in the wallet</p>
                         <a href="#">Read More</a>
                       </div>
                     </div>
@@ -80,8 +80,8 @@ function Landing () {
                     <div className="box">
                       <div className="content">
                         <h2>02</h2>
-                        <h3>Verify Wallet</h3>
-                        <p>Popular belief Ipsum is not simply random text. It has roots in a piece of classical</p>
+                        <h3>Hold NFT and Get Airdrop</h3>
+                        <p>Just hold your NFT in your wallet, and we will do a snapshot at the end of the event, don't let your NFT leave your wallet, otherwise you won't get a snapshot for the airdrop</p>
                         <a href="#">Read More</a>
                       </div>
                     </div>
@@ -91,8 +91,8 @@ function Landing () {
                     <div className="box">
                       <div className="content">
                         <h2>03</h2>
-                        <h3>Start Staking</h3>
-                        <p>Belief norem Isum is not simply random text. It has roots in a piece of classical?</p>
+                        <h3>Stake And Earn</h3>
+                        <p>You can stake your NFT and your Tokens on our website when we launch staking for NFT and tokens to get a pool prize as your profit</p>
                         <a href="#">Read More</a>
                       </div>
                     </div>
@@ -103,7 +103,7 @@ function Landing () {
               {/* Roadmap */}
               {/* Title */}
               <div id="Developer" className='relative mb-8 pt-32'>
-                <div className='text-4xl text-white font-bold'>Developer</div>
+                <div className='text-4xl text-white font-bold'>Meet the team</div>
               </div>
               <div className='relative flex flex-col justify-center items-center w-full h-full'>
                 {/* <img src="https://raydium.io/backgroundImages/home-bg-element-3.png" className='absolute top-0' style={{top: "-60%", width: "100%"}}></img> */}
@@ -114,9 +114,9 @@ function Landing () {
                     <div className="flip-box-front text-center relative">
                       <img src="img/1.jpg" className='absolute top-0 left-0 h-full'></img>
                       <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
-                        <div className='text-white text-2xl text-left pl-4'>Mr.Versace</div>
+                        <div className='text-white text-2xl text-left pl-4'>Aero</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
-                          <div className='text-white text-base text-left pl-4'>Project Lead</div>
+                          <div className='text-white text-base text-left pl-4'>TBB : Project Lead</div>
                           <div className='flex flex-row justify-end'>
                             <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
                             <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
@@ -137,9 +137,9 @@ function Landing () {
                     <div className="flip-box-front text-center relative">
                       <img src="img/2.jpg" className='absolute top-0 left-0 h-full'></img>
                       <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
-                        <div className='text-white text-2xl text-left pl-4'>Mr.Velaso</div>
+                        <div className='text-white text-2xl text-left pl-4'>Ace</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
-                          <div className='text-white text-base text-left pl-4'>Admin</div>
+                          <div className='text-white text-base text-left pl-4'>Community Manager</div>
                           <div className='flex flex-row justify-end'>
                             <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
                             <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
@@ -160,9 +160,9 @@ function Landing () {
                     <div className="flip-box-front text-center relative">
                       <img src="img/3.jpg" className='absolute top-0 left-0 h-full w-full'></img>
                       <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
-                        <div className='text-white text-2xl text-left pl-4'>Jyax</div>
+                        <div className='text-white text-2xl text-left pl-4'>Martin</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
-                          <div className='text-white text-base text-left pl-4'>Moderator</div>
+                          <div className='text-white text-base text-left pl-4'>Developer Project</div>
                           <div className='flex flex-row justify-end'>
                             <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
                             <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
@@ -183,9 +183,9 @@ function Landing () {
                     <div className="flip-box-front text-center relative">
                       <img src="img/4.jpg" className='absolute top-0 left-0 h-full'></img>
                       <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
-                        <div className='text-white text-2xl text-left pl-4'>Mr.Edestuss</div>
+                        <div className='text-white text-2xl text-left pl-4'>Lucky Cat</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
-                          <div className='text-white text-base text-left pl-4'>Designer</div>
+                          <div className='text-white text-base text-left pl-4'>Marketing Manager</div>
                           <div className='flex flex-row justify-end'>
                             <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
                             <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
@@ -200,6 +200,30 @@ function Landing () {
                     </div>
                   </div>
                   </div>
+                  
+                  <div className="box-item">
+                  <div className="flip-box">
+                    <div className="flip-box-front text-center relative">
+                      <img src="img/3.jpg" className='absolute top-0 left-0 h-full w-full'></img>
+                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+                        <div className='text-white text-2xl text-left pl-4'>Oxminion</div>
+                        <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
+                          <div className='text-white text-base text-left pl-4'>Artist</div>
+                          <div className='flex flex-row justify-end'>
+                            <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
+                            <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/hj4c4qnov/cta-3.png')"}}>
+                      <div className="inner color-white">
+                        <button className="flip-box-button">Learn More</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
 
               </div>
               </div>
