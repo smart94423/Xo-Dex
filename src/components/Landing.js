@@ -6,9 +6,10 @@ import '../css/animations.css';
 import '../css/second_section.css';
 import '../css/roadmap.css';
 import '../css/real_roadmap.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Navbar from './Navbar';
 import { useNavigate } from 'react-router-dom';
+import Accordion from './Accordion';
 
 function Landing () {
     const navigate = useNavigate();
@@ -17,7 +18,8 @@ function Landing () {
       navigate('/detailed', { replace: true });
     }
 
-
+    const team_fund = "Team funds (0% on buys, 2% on sells, average 1%) will be untilized for team compensation. Eightly percent will be allocated to the core team (currently four members), while remaining 20% will be used to team development.";
+      
     return (
       <div className="App">
         <Navbar name="Landing"/>
@@ -244,6 +246,21 @@ function Landing () {
 
               </div>
               </div>
+          </div>
+        </div>
+
+        {/* FAQ */}
+        <></>
+        <div className='grid grid-cols-2 _md:grid-cols-1'>
+          <div className='flex justify-center items-center'>
+            <img src="https://www.xo-dex.com/assets/images/transavatar.png"></img>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+            <div className='text-white text-3xl font-bold pb-10'>FAQ</div>
+            <Accordion title="How are team funds distributed?" content={team_fund} />
+            <Accordion title="How will we use community funds?" content="Unknown" />
+            <Accordion title="How will the reward pool be filled?" content="Unknown" />
+            <Accordion title="How will we use the pinksale funds?" content="Unknown" />
           </div>
         </div>
 
