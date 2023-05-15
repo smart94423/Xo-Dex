@@ -138,12 +138,42 @@ input[type=text] {
     .tokenomics {
         width: 100% !important;
     }
+
+    .card {
+        width: 85% !important;
+    }
+
+    .myVideo {
+        height: 97% !important;
+    }
+
+    .footerLink{
+        padding-right: 0px !important;
+    }
+
+    .footer {
+        padding-bottom: 20px;
+    }
 }
 
 /* md */
 @media only screen and (max-width: 768px) {
     .lorWatch {
         text-align: center;
+    }
+
+    .footer_logo {
+        width: 150px !important;
+        height: 60px !important;
+    }
+
+    .footer_input{
+        width: 80% !important;
+        height: 30px !important;
+    }
+
+    .footer_subscirbe{
+        height: 30px !important;
     }
 
     .tableSortList {

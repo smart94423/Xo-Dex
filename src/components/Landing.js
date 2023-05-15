@@ -36,12 +36,12 @@ function Landing () {
                 {/* Title */}
                 <h1 className='rounded-lg bg-ebony-clay-500/70 text-4xl text-left only:font-extrabold tracking-tight text-white sm:text-6xl sm:leading-none xl:text-6xl'>
                   Pepe Born&nbsp;
-                  <span className='bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent '>|&nbsp;</span>
-                  <span className='text-primary-400 '>Marketplace NFT&nbsp;</span>
-                  <div className='flex justify-center bg-gradient-to-r from-primary via-white to-white bg-clip-text text-transparent '>& Swap</div>
+                  {/* <span className='bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent '>|&nbsp;</span> */}
+                  {/* <span className='text-primary-400 '>Marketplace NFT&nbsp;</span> */}
+                  <div className='flex justify-center bg-gradient-to-r from-primary _sm:text-3xl via-white to-white bg-clip-text text-transparent '>Marketplace NFT & Swap</div>
                 </h1>
                 {/* SubTitle */}
-                <p className='text-center mt-6 rounded-lg bg-ebony-clay-500/70 text-2xl text-left text-gray-300 lg:text-3xl xl:text-3xl'>The Pioneer of Sustainability meme coin on web3.0</p>
+                <p className='text-center mt-6 rounded-lg bg-ebony-clay-500/70 text-2xl text-left text-gray-300 lg:text-3xl _sm:text-lg xl:text-3xl'>The Pioneer of Sustainability meme coin on web3.0</p>
                 {/* Buttons */}
                 <div className='mt-5 w-full sm:max-w-lg lg:ml-0'>
                   <div className='mt-24 items-center gap-5 flex justify-center text-white'>
@@ -103,7 +103,7 @@ function Landing () {
               <div className='relative flex flex-col justify-center items-center w-full h-full'>
                 {/* <img src="https://raydium.io/backgroundImages/home-bg-element-3.png" className='absolute top-0' style={{top: "-60%", width: "100%"}}></img> */}
 
-                <div className="box-container grid grid-cols-4 m-auto">
+                <div className="box-container grid grid-cols-4 _lg:grid-cols-1 m-auto">
                   <div className="box-item">
                   <div className="flip-box">
                     <div className="flip-box-front text-center relative">
@@ -259,22 +259,22 @@ function Landing () {
                   <div className='text-white text-lg font-bold'>10%</div>
                   <div className='h-14 w-full' style={{backgroundColor: "rgba(109, 74, 254, 0.2)"}}></div>
                 </div>
-                <div className='flex flex-col' style={{width: "30%"}}>
+                <div className='flex flex-col' style={{width: "27%"}}>
                   <div className='text-gray-600 text-lg font-bold'>Airdrop</div>
                   <div className='text-white text-lg font-bold'>27%</div>
                   <div className='h-14 w-full' style={{backgroundColor: "rgba(109, 74, 254, 0.3)"}}></div>
                 </div>
-                <div className='flex flex-col' style={{width: "30%"}}>
+                <div className='flex flex-col' style={{width: "33%"}}>
                   <div className='text-gray-600 text-lg font-bold'>Liquidity</div>
                   <div className='text-white text-lg font-bold'>33%</div>
                   <div className='h-14 w-full' style={{backgroundColor: "rgba(109, 74, 254, 0.4)"}}></div>
                 </div>
-                <div className='flex flex-col w-1/5' >
+                <div className='flex flex-col' style={{width: "20%"}}>
                   <div className='text-gray-600 text-lg font-bold'>Marketing</div>
                   <div className='text-white text-lg font-bold'>20%</div>
                   <div className='h-14 w-full' style={{backgroundColor: "rgba(109, 74, 254, 0.5)"}}></div>
                 </div>
-                <div className='flex flex-col w-1/10'>
+                <div className='flex flex-col' style={{width: "10%"}}>
                   <div className='text-gray-600 text-lg font-bold'>Reward</div>
                   <div className='text-white text-lg font-bold'>10%</div>
                   <div className='h-14 w-full' style={{backgroundColor: "rgba(109, 74, 254, 0.6)"}}></div>
@@ -309,7 +309,7 @@ function Landing () {
           <div className='text-4xl text-white font-bold'>Roadmap</div>
         </div>
         <div className='flex flex-row _lg:flex-col justify-center'>
-        <div className="card rgb">
+        <div className="card rgb" style={{width: "20%"}}>
           <div className="card-image" ></div>
           <div className="card-text">
             <h2 className={"text-center mb-4"}>Phase 1</h2>
@@ -352,18 +352,18 @@ function Landing () {
         </div>
 
         {/* footer */}
-        <div className='footer py-12 flex justify-center  relative' style={{height: "300px"}}>
-           <video autoPlay loop muted className="absolute h-full w-full border border-gray-600" style={{ objectFit: 'cover', height: '240px' }}>
+        <div className='footer py-12 _lg:py-2 flex justify-center  relative'>
+           <video autoPlay loop muted className="myVideo absolute h-full w-full border border-gray-600" style={{ objectFit: 'cover', height: '240px' }}>
               <source src="https://belaunch.io/assets/bg.206574b5.mp4" type="video/mp4"></source>
           </video> 
 
           <div className='text-left grid grid-cols-3 _lg:grid-cols-1 _md:grid-cols-1 _sm:grid-cols-1 relative'  style={{width: "1440px"}}>
             <div className='footer_email flex justify-center items-center _md:m-auto'>
               <div className='footerLogo flex flex-col pb-5 py-5'>
-                <img className='items-start' src="img/head_logo.png" style={{width: "200px", height:"80px"}}></img>
+                <img className='items-start footer_logo' src="img/head_logo.png" style={{width: "200px", height:"80px"}}></img>
                 <div className='flex flex-row footer_email pt-5'>
-                  <input type="text" placeholder='Enter email' className='mr-2' style={{width: "240px", backgroundColor: "#1F2633", height: "40px"}}></input>
-                  <div className='focus:ring-4 focus:outline-none focus:ring-spring-green-800 group-hover:from-spring-green-400 group-hover:to-cerulean-600 hover:text-white relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-[#1FD992] to-[#249CD2]  text-white min-w-fit hover:cursor-pointer leading-6'>
+                  <input type="text" placeholder='Enter email' className='footer_input mr-2' style={{width: "240px", backgroundColor: "#1F2633", height: "40px"}}></input>
+                  <div className='footer_subscirbe focus:ring-4 focus:outline-none focus:ring-spring-green-800 group-hover:from-spring-green-400 group-hover:to-cerulean-600 hover:text-white relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium rounded-lg group bg-gradient-to-br from-[#1FD992] to-[#249CD2]  text-white min-w-fit hover:cursor-pointer leading-6'>
                     <span className='group-hover:bg-opacity-0 relative px-5 py-1 transition-all ease-in duration-75 bg-ebony-clay-500 rounded-md flex flex-row font-bold min-w-fit items-center'>Subscribe</span>
                   </div>
                 </div>
@@ -373,24 +373,24 @@ function Landing () {
             
             <div className='flex flex-row justify-center _md:text-center'>
               <div className='footerLink pr-24 py-5'>
-                <p className='text-sm text-gray-300 font-bold py-2'>General</p>
-                <p className='text-sm text-gray-400 py-1'>About</p>
-                <p className='text-sm text-gray-400 py-1'>Blog</p>
-                <p className='text-sm text-gray-400 py-1'>Contact us</p>
-                <p className='text-sm text-gray-400 py-1'>Support</p>
-                <p className='text-sm text-gray-400 py-1'>Community</p>
+                <p className='text-base text-gray-100 font-bold py-2'>General</p>
+                <p className='text-sm text-yellow-300 py-1'>About</p>
+                <p className='text-sm text-yellow-300 py-1'>Blog</p>
+                <p className='text-sm text-yellow-300 py-1'>Contact us</p>
+                <p className='text-sm text-yellow-300 py-1'>Support</p>
+                <p className='text-sm text-yellow-300 py-1'>Community</p>
               </div>
 
               <div className='footerLink py-5'>
-                <p className='text-sm text-gray-300 font-bold py-2'>Legal</p>
-                <p className='text-sm text-gray-400 py-1'>Terms & conditions</p>
-                <p className='text-sm text-gray-400 py-1'>Privacy policy</p>
-                <p className='text-sm text-gray-400 py-1'>Cookie policy</p>
+                <p className='text-base text-gray-100 font-bold py-2'>Legal</p>
+                <p className='text-sm text-yellow-300 py-1'>Terms & conditions</p>
+                <p className='text-sm text-yellow-300 py-1'>Privacy policy</p>
+                <p className='text-sm text-yellow-300 py-1'>Cookie policy</p>
               </div>
             </div>
 
             <div className='flex justify-center flex-col items-center pt-5'>
-              <p className='text-sm text-gray-300 font-bold py-2'>Follow us</p>
+              <p className='text-base text-gray-100 font-bold py-2'>Follow us</p>
               <div className='flex flex-row py-1 justify-start'>
                   <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
                   <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
@@ -399,7 +399,7 @@ function Landing () {
             </div>
           </div>
         </div>
-        <div className='text-sm text-gray-400 py-1'> Copyright 2023 Pepe born All rights reserved </div>
+        <div className='text-sm text-gray-200 py-1'> Copyright 2023 Pepe born All rights reserved </div>
       </div>
     );
 }
