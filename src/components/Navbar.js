@@ -70,8 +70,8 @@ export default function Example(props) {
           <div className="max-w-7x py-1 px-4 sm:px-8 lg:px-12">
             <div className="relative flex h-14 _md:h-10 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center lg:hidden" style={{width: "120px"}}>
-                <img src={logo} style={{minWidth: "50px", maxWidth: "50px"}}></img>
-                <img className='mt-4' src="img/pepe_text.png" style={{width: "90px", height:"30px"}}></img>
+                <img src={logo} style={{minWidth: "200px", maxWidth: "40px"}}></img>
+                {/* <img className='mt-4' src="img/pepe_text.png" style={{width: "90px", height:"30px"}}></img> */}
               </div>
               
               {/* Mobile menu button*/}
@@ -93,15 +93,15 @@ export default function Example(props) {
                     className="block lg:hidden"
                     src={logo}
                     alt="Your Company"
-                    style={{minWidth: "60px", maxWidth: "60px"}}
+                    style={{minWidth: "250px", maxWidth: "50px"}}
                   />
                   <img
                     className="hidden lg:block"
                     src={logo}
                     alt="Your Company"
-                    style={{minWidth: "60px", maxWidth: "60px"}}
+                    style={{minWidth: "250px", maxWidth: "50px"}}
                   />
-                  <img className='mt-6' src="img/pepe_text.png" style={{width: "100px", height:"30px"}}></img>
+                  {/* <img className='mt-6' src="img/pepe_text.png" style={{width: "100px", height:"30px"}}></img> */}
                 </div>
                 <div className="hidden sm:ml-6 lg:block w-full pt-2">
                   <div className="flex flex-row justify-center items-center space-x-4 text-center" style={{justifyContent: "end"}}>

@@ -20,7 +20,7 @@ export default function Example() {
                 <div className='flex flex-row'>
                   {/* <img className='items-start footer_logo' src="img/head_logo.png" style={{width: "100px", height:"100px"}}></img> */}
                   <div className='flex items-end'>
-                    <img className='' src="img/pepe_text.png" style={{width: "150px", height:"50px"}}></img>
+                    <img className='' src="img/head_logo.png" style={{width: "250px", height:"50px"}}></img>
                   </div>
                 </div>
                 <div className='flex flex-row footer_email pt-5'>
