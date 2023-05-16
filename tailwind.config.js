@@ -13,7 +13,7 @@ module.exports = {
         max: "768px",
       },
       "_lg": {
-        max: "1040px",
+        max: "1200px",
       },
       "sm": {
         min: "640px",
@@ -22,7 +22,7 @@ module.exports = {
         min: "768px",
       },
       "lg": {
-        min: "1040px",
+        min: "1200px",
       },
     },
   },

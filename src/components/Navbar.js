@@ -2,7 +2,7 @@ import { Fragment, useEffect, useImperativeHandle, useState } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { useNavigate } from 'react-router-dom';
-import logo from '../img/logo.png';
+import logo from '../img/head_logo.png';
 
 
 //-----------wallet connect modules--------------
@@ -64,13 +64,14 @@ export default function Example(props) {
   }
 
   return (
-    <Disclosure as="nav" className="bg-gray-800 pt-2 fixed inset-x-0 z-10" style={{backgroundColor: "#00000077"}}>
+    <Disclosure as="nav" className="bg-gray-800 py-2 fixed inset-x-0 z-10" style={{backgroundColor: "#00000077"}}>
       {({ open }) => (
         <>
-          <div className="max-w-7x px-4 sm:px-8 lg:px-12">
-            <div className="relative flex h-16 items-center justify-between">
+          <div className="max-w-7x py-1 px-4 sm:px-8 lg:px-12">
+            <div className="relative flex h-14 _md:h-10 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center lg:hidden" style={{width: "120px"}}>
-                <img src={logo} style={{minWidth: "120px", maxWidth: "120px"}}></img>
+                <img src={logo} style={{minWidth: "50px", maxWidth: "50px"}}></img>
+                <img className='mt-4' src="img/pepe_text.png" style={{width: "90px", height:"30px"}}></img>
               </div>
               
               {/* Mobile menu button*/}
@@ -89,17 +90,18 @@ export default function Example(props) {
                 {/* Normal navigation*/}
                 <div className="flex flex-shrink-0 items-center _lg:hidden">
                   <img
-                    className="block h-16 w-auto lg:hidden"
+                    className="block lg:hidden"
                     src={logo}
                     alt="Your Company"
-                    // style={{width: "150px", height: "60px"}}
+                    style={{minWidth: "60px", maxWidth: "60px"}}
                   />
                   <img
-                    className="hidden h-16 w-auto lg:block"
+                    className="hidden lg:block"
                     src={logo}
                     alt="Your Company"
-                    // style={{width: "150px", height: "60px"}}
+                    style={{minWidth: "60px", maxWidth: "60px"}}
                   />
+                  <img className='mt-6' src="img/pepe_text.png" style={{width: "100px", height:"30px"}}></img>
                 </div>
                 <div className="hidden sm:ml-6 lg:block w-full pt-2">
                   <div className="flex flex-row justify-center items-center space-x-4 text-center" style={{justifyContent: "end"}}>
@@ -112,7 +114,7 @@ export default function Example(props) {
                         style={{fontWeight: "bold"}}
                         className={classNames(
                           item.current ? 'bg-gray-800 text-white font-bold': 'font-bold text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium'
+                          'rounded-md px-3 py-2 text-sm font-medium lg:text-base'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                         target = {item.name=="Staking" ? "_self" : "_self" }

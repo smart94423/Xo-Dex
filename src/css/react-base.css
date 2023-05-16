@@ -144,7 +144,7 @@ input[type=text] {
     }
 
     .myVideo {
-        height: 97% !important;
+        height: 90% !important;
     }
 
     .footerLink{
@@ -172,8 +172,8 @@ input[type=text] {
     }
 
     .footer_logo {
-        width: 180px !important;
-        height: 60px !important;
+        width: 70px !important;
+        height: 70px !important;
     }
 
     .footer_input{
@@ -238,6 +238,10 @@ input[type=text] {
 
     .first_section{
         height: 640px !important;
+    }
+
+    .myVideo {
+        height: 97% !important;
     }
 
     .smShow {
