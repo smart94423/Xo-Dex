@@ -24,26 +24,27 @@ function Landing () {
       <div className="App">
         <Navbar name="Landing"/>
 
-        <div className='relative h-full pt-6' style={{backgroundColor: "#1F2633"}}>
-          <div className='mt-24 flex h-full flex-col items-center relative'>
+        <div className='relative h-full' style={{backgroundColor: "#1F2633"}}>
+          <div className='flex h-full flex-col items-center relative'>
               <img className='absolute top-0' src="https://raydium.io/backgroundImages/home-bg-element-1.png"></img>
               {/* FirstSection Content */}
               <div className='first_section relative px-4 sm:px-6 flex flex-col justify-center items-center w-full' style={{height: "1000px"}}>
                 <div className="absolute inset-0">
                   <video autoPlay loop muted className="absolute h-full w-full object-cover">
-                    <source src="img/hero.webm" type="video/webm"></source>
+                    {/* <source src="img/hero.webm" type="video/webm"></source> */}
+                    <source src="https://belaunch.io/assets/bg.206574b5.mp4" type="video/mp4"></source>
                   </video>
                 </div>
 
                 {/* Title */}
-                <h1 className='rounded-lg bg-ebony-clay-500/70 text-4xl text-left only:font-extrabold tracking-tight text-white sm:text-6xl sm:leading-none xl:text-6xl'>
+                <h1 className='relative rounded-lg bg-ebony-clay-500/70 text-4xl text-left only:font-extrabold tracking-tight text-white sm:text-6xl sm:leading-none xl:text-6xl'>
                   Pepe Born&nbsp;
                   {/* <span className='bg-gradient-to-r from-white via-white to-primary bg-clip-text text-transparent '>|&nbsp;</span> */}
                   {/* <span className='text-primary-400 '>Marketplace NFT&nbsp;</span> */}
                   <div className='flex justify-center bg-gradient-to-r from-primary _sm:text-3xl via-white to-white bg-clip-text text-transparent '>Marketplace NFT & Swap</div>
                 </h1>
                 {/* SubTitle */}
-                <p className='text-center mt-6 rounded-lg bg-ebony-clay-500/70 text-2xl text-left text-gray-300 lg:text-3xl _sm:text-lg xl:text-3xl'>The Pioneer of Sustainability meme coin on web3.0</p>
+                <p className='relative text-center mt-6 rounded-lg bg-ebony-clay-500/70 text-2xl text-left text-gray-300 lg:text-3xl _sm:text-lg xl:text-3xl'>The Pioneer of Sustainability meme coin on web3.0</p>
                 {/* Buttons */}
                 <div className='mt-5 w-full sm:max-w-lg lg:ml-0'>
                   <div className='mt-24 items-center gap-5 flex justify-center text-white'>
@@ -370,7 +371,8 @@ function Landing () {
         {/* footer */}
         <div className='footer py-12 _lg:py-2 flex justify-center  relative'>
            <video autoPlay loop muted className="myVideo absolute h-full w-full border border-gray-600" style={{ objectFit: 'cover', height: '240px' }}>
-              <source src="https://belaunch.io/assets/bg.206574b5.mp4" type="video/mp4"></source>
+              {/* <source src="https://belaunch.io/assets/bg.206574b5.mp4" type="video/mp4"></source> */}
+              <source src="img/hero.webm" type="video/webm"></source>
           </video> 
 
           <div className='text-left grid grid-cols-3 _lg:grid-cols-1 _md:grid-cols-1 _sm:grid-cols-1 relative'  style={{width: "1440px"}}>
@@ -406,11 +408,11 @@ function Landing () {
             </div>
 
             <div className='flex justify-center flex-col items-center pt-5'>
-              <p className='text-base text-gray-100 font-bold py-2'>Follow us</p>
-              <div className='flex flex-row py-1 justify-start'>
-                  <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="https://app.mopots.io/static/media/telegram.f3a1d66a4ba10831f07f86c58b8d8394.svg"></img></a>
-                  <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="https://app.mopots.io/static/media/twitter.7fdc99d9abf21c3334b63a1274630fde.svg"></img></a>
-                  <a href="https://medium.com/@babybornlabs" target="_blank"><img src="https://app.mopots.io/static/media/medium.88b1df0cd4fba32a91140609053abfce.svg"></img></a>
+              <p className='text-base text-gray-100 font-bold py-2 text-left'>Follow us</p>
+              <div className='flex flex-row py-1 justify-center items-center'>
+                  <a href="https://t.me/thebabyborn" target="_blank"><img className='pr-6' src="img/github.png"></img></a>
+                  <a href="https://twitter.com/thebabyborn" target="_blank"><img className='pr-5' src="img/twitter.png"></img></a>
+                  {/* <a href="https://medium.com/@babybornlabs" target="_blank"><img src="https://app.mopots.io/static/media/medium.88b1df0cd4fba32a91140609053abfce.svg"></img></a> */}
               </div>
             </div>
           </div>
