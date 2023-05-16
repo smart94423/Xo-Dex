@@ -112,8 +112,8 @@ function Landing () {
                   <div className="box-item">
                   <div className="flip-box">
                     <div className="flip-box-front text-center relative">
-                      <img src="img/1.jpg" className='absolute top-0 left-0 h-full'></img>
-                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+                      <img src="img/1.jpg" className='absolute top-0 left-0 h-full w-full'></img>
+                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.85)"}}>
                         <div className='text-white text-2xl text-left pl-4'>Aero</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Project Lead</div>
@@ -137,8 +137,8 @@ function Landing () {
                   <div className="box-item">
                   <div className="flip-box">
                     <div className="flip-box-front text-center relative">
-                      <img src="img/2.jpg" className='absolute top-0 left-0 h-full'></img>
-                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+                      <img src="img/2.jpg" className='absolute top-0 left-0 h-full w-full'></img>
+                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.85)"}}>
                         <div className='text-white text-2xl text-left pl-4'>Ace</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Community Manager</div>
@@ -163,7 +163,7 @@ function Landing () {
                   <div className="flip-box">
                     <div className="flip-box-front text-center relative">
                       <img src="img/3.jpg" className='absolute top-0 left-0 h-full w-full'></img>
-                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.85)"}}>
                         <div className='text-white text-2xl text-left pl-4'>Martin</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Developer Project</div>
@@ -188,7 +188,7 @@ function Landing () {
                   <div className="flip-box">
                     <div className="flip-box-front text-center relative">
                       <img src="img/4.jpg" className='absolute top-0 left-0 h-full'></img>
-                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.85)"}}>
                         <div className='text-white text-2xl text-left pl-4'>Lucky Cat</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Marketing Manager</div>
@@ -212,8 +212,8 @@ function Landing () {
                   <div className="box-item">
                   <div className="flip-box">
                     <div className="flip-box-front text-center relative">
-                      <img src="img/3.jpg" className='absolute top-0 left-0 h-full w-full'></img>
-                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+                      <img src="img/5.jpg" className='absolute top-0 left-0 h-full w-full'></img>
+                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.85)"}}>
                         <div className='text-white text-2xl text-left pl-4'>Oxminion</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Artist</div>
@@ -237,8 +237,8 @@ function Landing () {
                   <div className="box-item">
                   <div className="flip-box">
                     <div className="flip-box-front text-center relative">
-                      <img src="img/3.jpg" className='absolute top-0 left-0 h-full w-full'></img>
-                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.6)"}}>
+                      <img src="img/6.jpg" className='absolute top-0 left-0 h-full w-full'></img>
+                      <div className="absolute w-full h-1/4 color-white" style={{top:"75%", backgroundColor: "rgba(0, 0, 0, 0.85)"}}>
                         <div className='text-white text-2xl text-left pl-4'>Edestus</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Designer</div>
@@ -307,7 +307,7 @@ function Landing () {
                 <div className='flex flex-col' style={{width: "10%"}}>
                   <div className='text-gray-600 text-lg font-bold'>Reward</div>
                   <div className='text-white text-lg font-bold'>10%</div>
-                  <div className='h-14 w-full' style={{backgroundColor: "rgba(109, 74, 254, 0.6)"}}></div>
+                  <div className='h-14 w-full' style={{backgroundColor: "rgba(109, 74, 254, 0.85)"}}></div>
                 </div>
               </div>
             </div>
