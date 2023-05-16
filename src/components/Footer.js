@@ -9,7 +9,7 @@ export default function Example() {
   return (
     <div>
         <div className='footer pt-12 _md:pt-4 flex justify-center  relative'>
-           <video autoPlay loop muted className="myVideo absolute h-full w-full border border-gray-600" style={{ objectFit: 'cover', height: '240px' }}>
+           <video autoPlay loop muted className="myVideo absolute w-full border border-gray-600" style={{ objectFit: 'cover', height: "80%"}}>
               {/* <source src="https://belaunch.io/assets/bg.206574b5.mp4" type="video/mp4"></source> */}
               <source src="img/hero.webm" type="video/webm"></source>
           </video> 

@@ -143,10 +143,6 @@ input[type=text] {
         width: 85% !important;
     }
 
-    .myVideo {
-        height: 90% !important;
-    }
-
     .footerLink{
         padding-right: 0px !important;
     }
@@ -162,6 +158,10 @@ input[type=text] {
 
     .panel {
         width: 380px !important;
+    }
+
+    .myVideo {
+        height: 90% !important;
     }
 }
 
@@ -225,9 +225,13 @@ input[type=text] {
         width: 100px;
     }
 
-    /* .roadmap_card {
+    .roadmap_card {
         width: 360px !important;
-    } */
+    }
+
+    .myVideo {
+        height: 97% !important;
+    }
 }
 
 /* sm */
@@ -240,9 +244,9 @@ input[type=text] {
         height: 640px !important;
     }
 
-    .myVideo {
+    /* .myVideo {
         height: 97% !important;
-    }
+    } */
 
     .smShow {
         text-align: center;
