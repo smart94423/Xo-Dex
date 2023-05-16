@@ -154,6 +154,15 @@ input[type=text] {
     .footer {
         padding-bottom: 20px;
     }
+
+    .accordion{
+        width: 380px !important;
+        font-size: 16px !important;
+    }
+
+    .panel {
+        width: 380px !important;
+    }
 }
 
 /* md */
@@ -163,7 +172,7 @@ input[type=text] {
     }
 
     .footer_logo {
-        width: 150px !important;
+        width: 180px !important;
         height: 60px !important;
     }
 
@@ -387,7 +396,7 @@ input[type=text] {
     cursor: pointer;
     padding: 18px;
     text-align: left;
-    width: 380px;
+    width: 580px;
     border: none;
     outline: none;
     transition: 0.4s;
@@ -403,18 +412,21 @@ input[type=text] {
     padding: 0 18px;
     background-color: rgb(25, 31, 41);
     /* max-height: 100px; */
-    width: 380px;
+    width: 580px;
     transition: max-height 0.2s ease-out;
   }
 
   .accordion:after {
-    content: '+'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
+    /* content: '\02795'; Unicode character for "plus" sign (+) */
+    content: '>';
+    font-size: 25px;
+    color: white;
     float: right;
-    margin-left: 5px;
+    margin-left: 20px;
   }
   
   .active:after {
-    content: "-"; /* Unicode character for "minus" sign (-) */
+    margin-left: 20px;
+    font-size: 22px;
+    content: '∨'; /* Unicode character for "minus" sign (-) */
   }
