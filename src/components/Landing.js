@@ -117,16 +117,16 @@ function Landing () {
                         <div className='text-white text-2xl text-left pl-4'>Aero</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Project Lead</div>
-                          <div className='flex flex-row justify-end'>
-                            <a href="https://twitter.com/pepebornlabs" target="_blank"><img className='pr-5' src="img/twitter.svg" width="45"></img></a>                  
-                            <a href="https://t.me/pepeborn" target="_blank"><img className='pr-5' src="img/telegram.svg" width="45"></img></a>
-                          </div>
                         </div>
                       </div>
                     </div>
                     <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/frbd9towf/cta-2.png')"}}>
                       <div className="inner color-white">
                         <button className="flip-box-button">Learn More</button>
+                        <div className='flex flex-row justify-center pt-3'>
+                          <a href="https://twitter.com/pepebornlabs" target="_blank"><img className='pr-5' src="img/twitter.svg" width="45"></img></a>                  
+                          <a href="https://t.me/pepeborn" target="_blank"><img className='pr-5' src="img/telegram.svg" width="45"></img></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -142,16 +142,16 @@ function Landing () {
                         <div className='text-white text-2xl text-left pl-4'>Ace</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Community Manager</div>
-                          <div className='flex flex-row justify-end'>
-                            <a href="https://twitter.com/pepebornlabs" target="_blank"><img className='pr-5' src="img/twitter.svg" width="45"></img></a>                  
-                            <a href="https://t.me/pepeborn" target="_blank"><img className='pr-5' src="img/telegram.svg" width="45"></img></a>
-                          </div>
                         </div>
                       </div>
                     </div>
-                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png')"}}>
+                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/frbd9towf/cta-2.png')"}}>
                       <div className="inner color-white">
                         <button className="flip-box-button">Learn More</button>
+                        <div className='flex flex-row justify-center pt-3'>
+                          <a href="https://twitter.com/pepebornlabs" target="_blank"><img className='pr-5' src="img/twitter.svg" width="45"></img></a>                  
+                          <a href="https://t.me/pepeborn" target="_blank"><img className='pr-5' src="img/telegram.svg" width="45"></img></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -167,16 +167,16 @@ function Landing () {
                         <div className='text-white text-2xl text-left pl-4'>Martin</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Developer Project</div>
-                          <div className='flex flex-row justify-end'>
-                            <a href="https://twitter.com/pepebornlabs" target="_blank"><img className='pr-5' src="img/twitter.svg" width="45"></img></a>                  
-                            <a href="https://t.me/pepeborn" target="_blank"><img className='pr-5' src="img/telegram.svg" width="45"></img></a>
-                          </div>
                         </div>
                       </div>
                     </div>
-                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/hj4c4qnov/cta-3.png')"}}>
+                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/frbd9towf/cta-2.png')"}}>
                       <div className="inner color-white">
                         <button className="flip-box-button">Learn More</button>
+                        <div className='flex flex-row justify-center pt-3'>
+                          <a href="https://twitter.com/pepebornlabs" target="_blank"><img className='pr-5' src="img/twitter.svg" width="45"></img></a>                  
+                          <a href="https://t.me/pepeborn" target="_blank"><img className='pr-5' src="img/telegram.svg" width="45"></img></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -192,16 +192,17 @@ function Landing () {
                         <div className='text-white text-2xl text-left pl-4'>Lucky Cat</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Marketing Manager</div>
-                          <div className='flex flex-row justify-end'>
-                            <a href="https://twitter.com/pepebornlabs" target="_blank"><img className='pr-5' src="img/twitter.svg" width="45"></img></a>                  
-                            <a href="https://t.me/pepeborn" target="_blank"><img className='pr-5' src="img/telegram.svg" width="45"></img></a>
-                          </div>
+
                         </div>
                       </div>
                     </div>
-                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/l2q9ujy4f/cta-4.png')"}}>
+                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/frbd9towf/cta-2.png')"}}>
                       <div className="inner color-white">
                         <button className="flip-box-button">Learn More</button>
+                        <div className='flex flex-row justify-center pt-3'>
+                          <a href="https://twitter.com/pepebornlabs" target="_blank"><img className='pr-5' src="img/twitter.svg" width="45"></img></a>                  
+                          <a href="https://t.me/pepeborn" target="_blank"><img className='pr-5' src="img/telegram.svg" width="45"></img></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -217,16 +218,16 @@ function Landing () {
                         <div className='text-white text-2xl text-left pl-4'>Oxminion</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Artist</div>
-                          <div className='flex flex-row justify-end'>
-                            <a href="https://twitter.com/pepebornlabs" target="_blank"><img className='pr-5' src="img/twitter.svg" width="45"></img></a>                  
-                            <a href="https://t.me/pepeborn" target="_blank"><img className='pr-5' src="img/telegram.svg" width="45"></img></a>
-                          </div>
                         </div>
                       </div>
                     </div>
-                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/hj4c4qnov/cta-3.png')"}}>
+                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/frbd9towf/cta-2.png')"}}>
                       <div className="inner color-white">
                         <button className="flip-box-button">Learn More</button>
+                        <div className='flex flex-row justify-center pt-3'>
+                          <a href="https://twitter.com/pepebornlabs" target="_blank"><img className='pr-5' src="img/twitter.svg" width="45"></img></a>                  
+                          <a href="https://t.me/pepeborn" target="_blank"><img className='pr-5' src="img/telegram.svg" width="45"></img></a>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -242,16 +243,16 @@ function Landing () {
                         <div className='text-white text-2xl text-left pl-4'>Edestus</div>
                         <div className='text-white text-base text-right pr-4 flex flex-row justify-between'>
                           <div className='text-white text-base text-left pl-4'>Designer</div>
-                          <div className='flex flex-row justify-end'>
-                            <a href="https://twitter.com/pepebornlabs" target="_blank"><img className='pr-5' src="img/twitter.svg" width="45"></img></a>                  
-                            <a href="https://t.me/pepeborn" target="_blank"><img className='pr-5' src="img/telegram.svg" width="45"></img></a>
-                          </div>
                         </div>
                       </div>
                     </div>
-                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/hj4c4qnov/cta-3.png')"}}>
+                    <div className="flip-box-back text-center" style={{backgroundImage: "url('https://s25.postimg.cc/frbd9towf/cta-2.png')"}}>
                       <div className="inner color-white">
                         <button className="flip-box-button">Learn More</button>
+                        <div className='flex flex-row justify-center pt-3'>
+                          <a href="https://twitter.com/pepebornlabs" target="_blank"><img className='pr-5' src="img/twitter.svg" width="45"></img></a>                  
+                          <a href="https://t.me/pepeborn" target="_blank"><img className='pr-5' src="img/telegram.svg" width="45"></img></a>
+                        </div>
                       </div>
                     </div>
                   </div>
