@@ -61,7 +61,7 @@ function Landing () {
               </div>
               
               {/* SecondSection Content */}
-              <div className='relative flex flex-col justify-center items-center w-full h-full'>
+              <section  className='relative flex flex-col justify-center items-center w-full h-full'>
                 <img src="https://raydium.io/backgroundImages/home-bg-element-3.png" className='absolute top-0' style={{top: "0%", width: "100%"}}></img>
                 <p className='text-white text-4xl font-bold pt-36'>How to participate</p>
                 <div className="second_section">
@@ -98,13 +98,13 @@ function Landing () {
                     </div>
                   </div>
                 </div>
-              </div>
+              </section >
 
               {/* Title */}
-              <div id="Developer" className='relative mb-8 pt-32'>
+              <section className='relative mb-8 pt-32'>
                 <div className='text-4xl text-white font-bold'>Meet the team</div>
-              </div>
-              <div className='relative flex flex-col justify-center items-center w-full h-full'>
+              </section >
+              <section id="Developer" className='relative flex flex-col justify-center items-center w-full h-full'>
                 {/* <img src="https://raydium.io/backgroundImages/home-bg-element-3.png" className='absolute top-0' style={{top: "-60%", width: "100%"}}></img> */}
 
                 <div className="box-container grid grid-cols-4 _lg:grid-cols-1 m-auto">
@@ -260,12 +260,12 @@ function Landing () {
                   </div>
 
               </div>
-              </div>
+              </section>
           </div>
         </div>
 
         {/* FAQ */}
-        <div className='grid grid-cols-2 _md:grid-cols-1 pt-10'>
+        <section  className='grid grid-cols-2 _md:grid-cols-1 pt-10'>
           <div className='flex flex-col justify-start items-center pt-10'>
             <div className='text-white text-3xl font-bold pb-10'>FAQ</div>
             <Accordion title="How are team funds distributed?" content={team_fund} />
@@ -276,10 +276,10 @@ function Landing () {
           <div className='flex justify-start items-center px-2'>
             <img src="img/large_logo.png"></img>
           </div>
-        </div>
+        </section >
 
         {/* Tokenomics */}
-        <div id="Tokenomics" className='flex flex-col justify-center items-center pt-20 pb-32'>
+        <section  id="Tokenomics" className='flex flex-col justify-center items-center pt-20 pb-32'>
           <div>
             <div className='relative font-bold text-3xl text-white pb-10'>TOKENOMICS</div>
 
@@ -332,14 +332,14 @@ function Landing () {
               </div>
             </div>
           </div>
-        </div>
+        </section >
 
         {/* Roadmap */}
         {/* Title */}
-        <div id="Roadmap" className='relative mb-8 pt-10'>
+        <section    className='relative mb-8 pt-10'>
           <div className='text-4xl text-white font-bold'>Roadmap</div>
-        </div>
-        <div className='flex flex-row _lg:flex-col justify-center'>
+        </section >
+        <section id="Roadmap" className='flex flex-row _lg:flex-col justify-center'>
         {/* <div className='flex justify-center'> */}
         <div className="card rgb" style={{width: "20%"}}>
           <div className="card-image" ></div>
@@ -388,7 +388,7 @@ function Landing () {
             </div>
         </div>
         {/* </div> */}
-        </div>
+        </section>
 
         <Footer />
       </div>

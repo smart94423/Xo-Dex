@@ -32,7 +32,8 @@ const navigation = [
   { name: 'Roadmap', href: '#Roadmap', current: false },
   { name: 'Whitepaper ', href: '#', current: false },
   {name: 'Staking', href: '/staking', current: false },
-  {name: 'Staking NFT', href: '/stakingnft', current: false },
+  {name: 'NFT Mint', href: '/nftmint', current: false },
+  {name: 'NFT Stake', href: '/nftstake', current: false },
 ]
 
 function classNames(...classes) {

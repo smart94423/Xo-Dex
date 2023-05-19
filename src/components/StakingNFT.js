@@ -18,10 +18,58 @@ function StakingNFT () {
 
         <div className='relative h-full pt-6' style={{backgroundColor: "#1F2633"}}>
           <div className='mt-6 flex h-full flex-col items-center relative'>
-              <div className='first_section relative px-4 sm:px-6 flex flex-col justify-center items-center w-full' style={{height: "1000px"}}>
+              <div className='mt-10 relative px-4 sm:px-6 flex flex-col justify-center items-center w-full' style={{height: "700px"}}>
         
-                {/* Staking NFT */}
-                
+                {/* Staking */}
+                <div className="roadmap_card rgb pt-8 px-4 flex flex-col" style={{width: "400px", height: "650px", backgroundColor: "rgba(0,0,0,0.9)"}}>
+                    {/* <div className='text-white text-xl font-bold my-5' style={{height: "30px"}}>Pepe Born</div> */}
+                    <div className='text-orange-400 text-2xl font-bold'>Create New NFT</div>
+                    
+                    <div id='devote' className='my-5 tabcontent' style={{height: "350px"}}>
+                        <div className='border border-gray-700 p-4 rounded-xl' style={{backgroundColor: "rgba(133, 100, 28, 0.3)"}}>
+                            <div className='flex flex-row justify-between'>
+                                <div className='text-gray-400 flex flex-row items-center text-sm'>
+                                    <p className='pr-1 text-orange-400 font-bold'>Title *</p>
+                                </div>
+                            </div>
+                            <div className='py-2'>
+                                <input className='bg-white text-orange-700 rounded-md w-full text-sm px-3 py-3' type='text' placeholder='Enter network name'></input>
+                            </div>
+
+                            <div className='flex flex-row justify-between'>
+                                <div className='text-gray-400 flex flex-row items-center text-sm'>
+                                    <p className='pr-1 text-orange-400 font-bold'>Artist Name *</p>
+                                </div>
+                            </div>
+                            <div className='py-2'>
+                                <input className='bg-white text-orange-700 rounded-md w-full text-sm px-3 py-3' type='text' placeholder='Enter artist name'></input>
+                            </div>
+
+                            <div className='flex flex-row justify-between'>
+                                <div className='text-gray-400 flex flex-row items-center text-sm'>
+                                    <p className='pr-1 text-orange-400 font-bold'>Royalties *</p>
+                                </div>
+                            </div>
+                            <div className='py-2'>
+                                <input className='bg-white text-orange-700 rounded-md w-full text-sm px-3 py-3' type='text' placeholder='0'></input>
+                            </div>
+
+                            <div className='flex flex-row justify-between'>
+                                <div className='text-gray-400 flex flex-row items-center text-sm'>
+                                    <p className='pr-1 text-orange-400 font-bold'>Description *</p>
+                                </div>
+                            </div>
+                            <div className='py-2'>
+                                <input className='bg-white text-orange-700 rounded-md w-full text-sm px-3 py-3' type='text' placeholder='Enter the brief introduction' style={{height: "80px"}}></input>
+                            </div>
+
+                            <div className='text-center text-orange-300 text-sm py-4'>Mint an NFT charges 0.01BNB, please do not upload any sensitive content.</div>
+                            <div className='w-full my-2 py-3 rounded-md text-white lorswap_vote text-center font-bold' style={{background: "linear-gradient(271.56deg, rgb(133, 100, 28) 44.99%, rgb(133, 79, 28) 74.63%)"}}>
+                                Mint
+                            </div>
+                        </div>
+                    </div>
+                </div>
               </div>
             </div>
         </div> 
