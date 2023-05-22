@@ -9,6 +9,7 @@ import '../css/real_roadmap.css';
 import { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Pagination from './Pagination';
 
 function StakingNFT () {
 
@@ -28,44 +29,44 @@ function StakingNFT () {
                     <div id='devote' className='my-5 tabcontent' style={{height: "350px"}}>
                         <div className='border border-gray-700 p-4 rounded-xl' style={{backgroundColor: "rgba(133, 100, 28, 0.3)"}}>
                             <div className='flex flex-row justify-between'>
-                                <div className='text-gray-400 flex flex-row items-center text-sm'>
-                                    <p className='pr-1 text-orange-400 font-bold'>Title *</p>
+                                <div className='text-gray-400 flex flex-row items-center text-2xl py-2'>
+                                    <p className='pr-1 text-orange-400 font-bold'>6 / 300</p>
                                 </div>
                             </div>
-                            <div className='py-2'>
-                                <input className='bg-white text-orange-700 rounded-md w-full text-sm px-3 py-3' type='text' placeholder='Enter network name'></input>
+
+                            <div className='flex flex-row justify-between'>
+                                <div className='text-gray-400 flex flex-row items-center text-base py-2'>
+                                    <p className='pr-1 text-gray-300 font-bold'>Your wallet address*</p>
+                                </div>
                             </div>
 
                             <div className='flex flex-row justify-between'>
                                 <div className='text-gray-400 flex flex-row items-center text-sm'>
-                                    <p className='pr-1 text-orange-400 font-bold'>Artist Name *</p>
+                                    <p className='pr-1 text-green-600 font-bold'>Please connect wallet</p>
                                 </div>
-                            </div>
-                            <div className='py-2'>
-                                <input className='bg-white text-orange-700 rounded-md w-full text-sm px-3 py-3' type='text' placeholder='Enter artist name'></input>
                             </div>
 
                             <div className='flex flex-row justify-between'>
-                                <div className='text-gray-400 flex flex-row items-center text-sm'>
-                                    <p className='pr-1 text-orange-400 font-bold'>Royalties *</p>
+                                <div className='text-gray-400 flex flex-row items-center text-sm py-2'>
+                                    <p className='pr-1 text-orange-400 font-bold'>Select NFT Quantity</p>
                                 </div>
                             </div>
-                            <div className='py-2'>
-                                <input className='bg-white text-orange-700 rounded-md w-full text-sm px-3 py-3' type='text' placeholder='0'></input>
-                            </div>
+                            <Pagination />
 
-                            <div className='flex flex-row justify-between'>
+                            <div className='flex flex-row justify-between py-2'>
                                 <div className='text-gray-400 flex flex-row items-center text-sm'>
-                                    <p className='pr-1 text-orange-400 font-bold'>Description *</p>
+                                    <p className='pr-1 text-orange-400 font-bold'>Buy with your preferred crypto</p>
                                 </div>
                             </div>
-                            <div className='py-2'>
-                                <input className='bg-white text-orange-700 rounded-md w-full text-sm px-3 py-3' type='text' placeholder='Enter the brief introduction' style={{height: "80px"}}></input>
+                            <div className='py-2 grid grid-cols-3'>
+                                <img src="img/head_logo1.png" className='px-2 _lg:px-0'></img>
+                                <img src="img/bnb_logo.png" className='px-2 _lg:px-0'></img>
+                                <img src="img/moonpot_logo.png" className='px-2 _lg:px-0'></img>
                             </div>
 
                             <div className='text-center text-orange-300 text-sm py-4'>Mint an NFT charges 0.01BNB, please do not upload any sensitive content.</div>
                             <div className='w-full my-2 py-3 rounded-md text-white lorswap_vote text-center font-bold' style={{background: "linear-gradient(271.56deg, rgb(133, 100, 28) 44.99%, rgb(133, 79, 28) 74.63%)"}}>
-                                Mint
+                                Minting NFTs PBN
                             </div>
                         </div>
                     </div>
